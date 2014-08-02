@@ -13,6 +13,9 @@ namespace BookWalkthrough
         {
             this.name = name;
         }
+        public void createMoon() {
+            Console.WriteLine("MOOOON");
+        }
     }
     class Program
     {
@@ -25,7 +28,18 @@ namespace BookWalkthrough
            
             World planet = new World("Earth");
             Console.WriteLine(planet.name);
-            Console.ReadLine();
+            string a;
+            a = Console.ReadLine();
+            switch (a)
+            {
+                case "2":
+                    planet.createMoon();
+                    break;
+                default:
+                    break;
+            }
+                    Console.ReadLine();
+                
         }
     }
 }
