@@ -11,7 +11,7 @@ namespace BookWalkthrough
         static void Main(string[] args)
         {
             Console.WriteLine("22324");
-            Console.ReadLine();
+            
         }
     }
 }
