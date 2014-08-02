@@ -6,6 +6,14 @@ using System.Threading.Tasks;
 
 namespace BookWalkthrough
 {
+    public class World
+    {
+        public string name;
+        public World(string name)
+        {
+            this.name = name;
+        }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -13,6 +21,10 @@ namespace BookWalkthrough
             Console.WriteLine("22324");
             Console.WriteLine("22324");
             Console.WriteLine("Hello my sweat World");
+            Console.ReadLine();
+           
+            World planet = new World("Earth");
+            Console.WriteLine(planet.name);
             Console.ReadLine();
         }
     }
