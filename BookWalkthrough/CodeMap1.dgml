@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <DirectedGraph DataVirtualized="True" Layout="ForceDirected" xmlns="http://schemas.microsoft.com/vs/2009/dgml">
   <Nodes>
-    <Node Id="@10" Category="CodeSchema_Method" Bounds="180.429761199788,223.504516211249,53.8075919931311,25.9562752297369" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="Car" />
-    <Node Id="@11" Category="CodeSchema_Method" Bounds="155.176239060872,411.373341900461,81.6072362608645,25.9599923200001" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="Program" />
-    <Node Id="@12" Category="CodeSchema_Field" Bounds="125.212327774996,279.460791440986,66.5579283896238,25.956275229737" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="name" />
-    <Node Id="@13" Category="CodeSchema_Method" Bounds="80,335.417066670723,84.6806721531806,25.956275229737" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="sayName" />
-    <Node Id="@14" Category="CodeSchema_Method" Bounds="251.239964705189,335.417066670723,86.0254341949982,25.956275229737" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="saySpeed" />
-    <Node Id="@15" Category="CodeSchema_Field" Bounds="221.77035616462,279.460791440986,68.8058392595264,25.956275229737" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="speed" />
-    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-4.04533986397837E-06,63.5038956312528,417.265391430925,433.829918009211" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="BookWalkthrough.exe" />
-    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="19.9999959546601,103.503995631253,377.265391430925,373.829718009211" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="BookWalkthrough" />
-    <Node Id="@6" Category="CodeSchema_Class" Bounds="59.9999959546601,183.504195631253,297.265391430925,197.869305709324" CodeSchemaProperty_IsPrivate="True" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="5" Group="Expanded" Label="Car" />
-    <Node Id="@7" Category="CodeSchema_Class" Bounds="39.9999959546601,143.504095631253,337.265391430925,313.829518009211" CodeSchemaProperty_IsInternal="True" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="3" Group="Expanded" Label="Program" />
-    <Node Id="@9" Category="CodeSchema_Method" Bounds="266.783575321737,411.373341900461,62.5807218075311,25.95999232" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsStatic="True" DelayedCrossGroupLinksState="Fetched" Label="Main" />
+    <Node Id="@10" Category="CodeSchema_Method" Bounds="169.429775437455,149.504299518921,53.8075919931311,25.956275229737" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="Car" />
+    <Node Id="@11" Category="CodeSchema_Method" Bounds="144.176240268005,337.373519465,81.6072362608645,25.9599923200001" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" DelayedCrossGroupLinksState="Fetched" Label="Program" />
+    <Node Id="@12" Category="CodeSchema_Field" Bounds="114.212338295422,205.46068989978,66.5579283896238,25.956275229737" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="name" />
+    <Node Id="@13" Category="CodeSchema_Method" Bounds="68.9999921399623,261.41706502185,84.6806721531806,25.9562752297369" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="sayName" />
+    <Node Id="@14" Category="CodeSchema_Method" Bounds="240.239949375889,261.417126057007,86.0254341949982,25.9562752297369" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="saySpeed" />
+    <Node Id="@15" Category="CodeSchema_Field" Bounds="210.770364900876,205.460750934936,68.8058392595264,25.956275229737" CodeSchemaProperty_IsPublic="True" DelayedCrossGroupLinksState="Fetched" Label="speed" />
+    <Node Id="@2" Category="CodeSchema_Assembly" Bounds="-11.0000078600375,-10.4961005169683,417.265391430925,433.829912301968" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="BookWalkthrough.exe" UseManualLocation="True" />
+    <Node Id="@4" Category="CodeSchema_Namespace" Bounds="8.9999921399625,29.5039994830317,377.265391430925,373.829712301968" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="1" Group="Expanded" Label="BookWalkthrough" UseManualLocation="True" />
+    <Node Id="@6" Category="CodeSchema_Class" Bounds="48.9999921399625,109.504199483032,297.265391430925,197.869301803712" CodeSchemaProperty_IsPrivate="True" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="5" Group="Expanded" Label="Car" />
+    <Node Id="@7" Category="CodeSchema_Class" Bounds="28.9999921399625,69.5040994830317,337.265391430925,313.829512301968" CodeSchemaProperty_IsInternal="True" DelayedChildNodesState="Fetched" DelayedCrossGroupLinksState="Fetched" FetchedChildrenCount="3" Group="Expanded" Label="Program" />
+    <Node Id="@9" Category="CodeSchema_Method" Bounds="255.783567929242,337.373504206211,62.5807218075311,25.95999232" CodeSchemaProperty_IsPrivate="True" CodeSchemaProperty_IsStatic="True" DelayedCrossGroupLinksState="Fetched" Label="Main" />
   </Nodes>
   <Links>
     <Link Source="@10" Target="@11" Bounds="-70.5781281619505,42.2868429447635,108.996298518504,156.570232271148" />
-    <Link Source="@10" Target="@12" Category="CodeSchema_FieldWrite" Bounds="175.73776274765,249.46057086099,20.2676544143335,23.2197350039681" Weight="1" />
-    <Link Source="@10" Target="@15" Category="CodeSchema_FieldWrite" Bounds="218.661090765565,249.46057086099,20.2665024703213,23.219658088739" Weight="1" />
-    <Link Source="@13" Target="@12" Category="CodeSchema_FieldRead" Bounds="130.724937343487,312.976532825441,14.4978310692179,22.4405132652859" Weight="4" />
-    <Link Source="@14" Target="@15" Category="CodeSchema_FieldRead" Bounds="270.068583364221,312.857567614436,15.3522142215627,22.559558496404" Weight="1" />
+    <Link Source="@10" Target="@12" Category="CodeSchema_FieldWrite" Bounds="164.737771362039,175.460574748657,20.2676632412608,23.2197495901954" Weight="1" />
+    <Link Source="@10" Target="@15" Category="CodeSchema_FieldWrite" Bounds="207.661103261442,175.460574748657,20.2664935566878,23.2196535397795" Weight="1" />
+    <Link Source="@13" Target="@12" Category="CodeSchema_FieldRead" Bounds="119.724934153998,238.976550685429,14.4978394382798,22.4405143364213" Weight="4" />
+    <Link Source="@14" Target="@15" Category="CodeSchema_FieldRead" Bounds="259.068583387873,238.857567663738,15.3522141809167,22.5595583932688" Weight="1" />
     <Link Source="@2" Target="@4" Category="Contains" FetchingParent="@2" />
     <Link Source="@4" Target="@7" Category="Contains" FetchingParent="@4" />
     <Link Source="@6" Target="@10" Category="Contains" FetchingParent="@6" />
@@ -75,6 +75,7 @@
     <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
     <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
     <Property Id="TargetType" DataType="System.Type" />
+    <Property Id="UseManualLocation" DataType="System.Boolean" />
     <Property Id="Value" DataType="System.String" />
     <Property Id="ValueLabel" DataType="System.String" />
     <Property Id="Visibility" Label="Visibility" Description="Defines whether a node in the graph is visible or not" DataType="System.Windows.Visibility" />

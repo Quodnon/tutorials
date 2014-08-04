@@ -5,37 +5,23 @@ namespace BookWalkthrough
 {
     class Program
     {
-        class Car
-   
+        static void Func() //дополнительный метод
         {
-            public string name;
-            public int speed;
-            public Car (string name) {
-                this.name = name;
-                this.speed = 100;
-            }
-            public void sayName() {
-                Console.WriteLine(this.name);
-                Console.WriteLine(this.name);
-                Console.WriteLine(this.name);
-                Console.WriteLine(this.name);
-            }
-            public int saySpeed() {
-                return this.speed;
-            }
+
+            Console.Write("x= ");
+
+            double x = double.Parse(Console.ReadLine()); double y = x * x;
+
+            Console.WriteLine("y({0})={1}", x, y);
+
         }
 
-        static void Main(string[] args)
+        static void Main() //точка входа в программу
         {
-            int a = 2;
-            string fur = "hedgehog";
-            Console.WriteLine("{0} {1}", a, fur);
-
-            
-            Car myCar = new Car("Ford");
-                 
-            myCar.sayName();
-           
+            int d=int.Parse(Console.ReadLine());
+            for (int i = 1; i <= d;i++ ){
+                Func(); //первый вызов метода Func
+            }
             Console.ReadLine();
         }
     }
