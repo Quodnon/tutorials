@@ -5,24 +5,39 @@ namespace BookWalkthrough
 {
     class Program
     {
-        static void Func() //дополнительный метод
+        static double Func(double x) //дополнительный метод
         {
 
-            Console.Write("x= ");
-
-            double x = double.Parse(Console.ReadLine()); double y = x * x;
-
-            Console.WriteLine("y({0})={1}", x, y);
+            if ( x>0 ) {
+               return x * x;
+            }
+            else {
+               return 1 / x; 
+            } //возвращаемое значение
 
         }
 
         static void Main() //точка входа в программу
         {
-            int d=int.Parse(Console.ReadLine());
-            for (int i = 1; i <= d;i++ ){
-                Func(); //первый вызов метода Func
+
+            Console.Write("a=");
+
+            double a = double.Parse(Console.ReadLine()); 
+            Console.Write("b=");
+
+            double b = double.Parse(Console.ReadLine()); 
+            Console.Write("h="); 
+            double h = double.Parse(Console.ReadLine());
+
+            for (double x = a; x <= b; x += h)
+            {
+
+                double y = Func(x); //вызов метода Func
+
+                Console.WriteLine("y({0:f1})={1:f2}", x, y);
+
             }
-            Console.ReadLine();
+            Console.ReadKey();
         }
     }
 }
