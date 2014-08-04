@@ -1,33 +1,53 @@
 ﻿using System;
 
+// для работы с Generic мы подключаем специальный класс
 
-namespace BookWalkthrough
+using System.Collections.Generic;
+using System.Text;
+
+namespace Example
 {
+
     class Program
     {
-        static int Func(int x, int y) // 1
+
+        // Данный метод меняет значения двух переменных типа <T>. Тип Т пока
+
+        //не конкретизирован
+
+        static void Swap<T>(ref T a, ref T b)
         {
 
-            return (x > y) ? x : y;
+            Console.WriteLine("Передаем в Swap() метод {0}", typeof(T)); T temp; temp = a; a = b;
+
+            b = temp;
 
         }
 
-        static void Main()
+        static void Main(string[] args)
         {
 
-            Console.Write("a=");
+            int a = 1, b = 2;
 
-            int a = int.Parse(Console.ReadLine());
-            Console.Write("b=");
+            Console.WriteLine("Перед swap: {0}, {1}", a, b);
 
-            int b = int.Parse(Console.ReadLine()); 
-            Console.Write("c="); 
-            int c = int.Parse(Console.ReadLine());
-            Console.Write("d=");
-            int d = int.Parse(Console.ReadLine()); 
-            int max = Func(Func(Func(a, b), c),d); 
-            Console.WriteLine("max({0}, {1}, {2},{3})={4}", a, b, c ,d, max);
+            Swap<int>(ref a, ref b); //передаем в Swap целый тип
+
+            Console.WriteLine("После swap: {0}, {1}", a, b); Console.WriteLine(); 
+            
+            double x = 3.2, y = -123.27;
+            Console.WriteLine("Перед swap: {0} {1}", x, y);
+
+            Swap<double>(ref x, ref y);
+            string z = "ds", f = "sd";
+            Swap<string>(ref z, ref f );
+
+            Console.WriteLine("После swap: {0} {1}", z, f);
+
             Console.ReadLine();
+
         }
+
     }
+
 }
