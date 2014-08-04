@@ -1,45 +1,42 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace BookWalkthrough
 {
-    public class World
-    {
-        public string name;
-        public World(string name)
-        {
-            this.name = name;
-        }
-        public void createMoon() {
-            Console.WriteLine("MOOOON");
-        }
-    }
     class Program
     {
+        class Car
+   
+        {
+            public string name;
+            public int speed;
+            public Car (string name) {
+                this.name = name;
+                this.speed = 100;
+            }
+            public void sayName() {
+                Console.WriteLine(this.name);
+                Console.WriteLine(this.name);
+                Console.WriteLine(this.name);
+                Console.WriteLine(this.name);
+            }
+            public int saySpeed() {
+                return this.speed;
+            }
+        }
+
         static void Main(string[] args)
         {
-            Console.WriteLine("22324");
-            Console.WriteLine("22324");
-            Console.WriteLine("Hello my sweat World");
-            Console.ReadLine();
+            int a = 2;
+            string fur = "hedgehog";
+            Console.WriteLine("{0} {1}", a, fur);
+
+            
+            Car myCar = new Car("Ford");
+                 
+            myCar.sayName();
            
-            World planet = new World("Earth");
-            Console.WriteLine(planet.name);
-            string a;
-            a = Console.ReadLine();
-            switch (a)
-            {
-                case "2":
-                    planet.createMoon();
-                    break;
-                default:
-                    break;
-            }
-                    Console.ReadLine();
-                
+            Console.ReadLine();
         }
     }
 }
