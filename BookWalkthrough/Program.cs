@@ -26,13 +26,28 @@ namespace Example
 
         static void Main(string[] args)
         {
-            int[] myArray = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+            int[] myArray; //создаем ссылку на массив 
+            Console.Write("n= ");
+            int n=int.Parse(Console.ReadLine());
 
-            foreach (int elem in myArray)
+            myArray = new int[n]; //выделяем память под массив требуемой длины 
+            
+            for (int i=0; i<n; i++) //вводим элементы массива с клавиатуры
+            {
+                Console.Write("A[{0}]= ", i);
+                myArray[i] = int.Parse(Console.ReadLine());
+
+            }
+
+            foreach (int elem in myArray) //выводим массив на экран
             {
 
-                Console.Write("{0} ",elem* elem);
-
+              if (elem>0)
+              {
+                  Console.Write("{0} ", elem);
+              } else {
+                  continue;
+              };
             }
             Console.ReadLine();
 
