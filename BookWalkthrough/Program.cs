@@ -26,28 +26,25 @@ namespace Example
 
         static void Main(string[] args)
         {
-            int[] myArray; //создаем ссылку на массив 
-            Console.Write("n= ");
-            int n=int.Parse(Console.ReadLine());
+            Random rnd = new Random(); //инициализируем генератор случайных чисел
+            float[] myArray;
 
-            myArray = new int[n]; //выделяем память под массив требуемой длины 
+            int n = rnd.Next(5, 10); //генерируем случайное число из диапазона [5..10) 
+            myArray = new float[n]; 
             
-            for (int i=0; i<n; i++) //вводим элементы массива с клавиатуры
+            for (int i = 0; i < n; i++)
+
             {
-                Console.Write("A[{0}]= ", i);
-                myArray[i] = int.Parse(Console.ReadLine());
+
+                myArray[i] = rnd.Next(10); // заполняем массив случайными числами
 
             }
 
             foreach (int elem in myArray) //выводим массив на экран
             {
 
-              if (elem>0)
-              {
-                  Console.Write("{0} ", elem);
-              } else {
-                  continue;
-              };
+                Console.Write("{0} ", elem);
+
             }
             Console.ReadLine();
 
