@@ -11,41 +11,44 @@ namespace Example
     class Program
     {
 
-        // Данный метод меняет значения двух переменных типа <T>. Тип Т пока
-
-        //не конкретизирован
-
-        static void Swap<T>(ref T a, ref T b)
+        //выводит на экран массив a
+        static void Print(int[] a)
         {
-
-            Console.WriteLine("Передаем в Swap() метод {0}", typeof(T)); T temp; temp = a; a = b;
-
-            b = temp;
-
+            foreach (int elem in a)
+            {
+               Console.Write("{0} ", elem);
+            }
+            Console.WriteLine();
         }
 
-        static void Main(string[] args)
+        //Заменяет отрицательные элементы массива а на нули. //Размерность массива n. 
+        static void Change(int[] a, int n)
         {
-            Random rnd = new Random(); //инициализируем генератор случайных чисел
-            float[] myArray;
-
-            int n = rnd.Next(5, 10); //генерируем случайное число из диапазона [5..10) 
-            myArray = new float[n]; 
-            
-            for (int i = 0; i < n; i++)
+            for (int i = 0; i< n; i++)
+            {
+                if (a[i] < 0) {
+                    a[i] = 0;
+                } else {
+                    a[i] *= 2;
+                }
+           }
+        }
+        static void Main()
 
             {
 
-                myArray[i] = rnd.Next(10); // заполняем массив случайными числами
+            int[] myArray = { 0, -1, -2, 3, 4, 5, -6, -7, 8, -9 };
 
-            }
+            Console.Write("Исходный массив: ");
 
-            foreach (int elem in myArray) //выводим массив на экран
-            {
+            Print(myArray);
 
-                Console.Write("{0} ", elem);
+            Change(myArray, 10);
 
-            }
+            Console.Write("Измененный массив: ");
+
+            Print(myArray);
+
             Console.ReadLine();
 
         }
