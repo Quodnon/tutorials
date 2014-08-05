@@ -26,24 +26,12 @@ namespace Example
 
         static void Main(string[] args)
         {
+            int[] myArray = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }; for (int i = 0; i < 10; i++)
+            {
 
-            int a = 1, b = 2;
+                Console.Write("{0} ",myArray[i]);
 
-            Console.WriteLine("Перед swap: {0}, {1}", a, b);
-
-            Swap<int>(ref a, ref b); //передаем в Swap целый тип
-
-            Console.WriteLine("После swap: {0}, {1}", a, b); Console.WriteLine(); 
-            
-            double x = 3.2, y = -123.27;
-            Console.WriteLine("Перед swap: {0} {1}", x, y);
-
-            Swap<double>(ref x, ref y);
-            string z = "ds", f = "sd";
-            Swap<string>(ref z, ref f );
-
-            Console.WriteLine("После swap: {0} {1}", z, f);
-
+            }
             Console.ReadLine();
 
         }
